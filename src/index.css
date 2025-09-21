@@ -1,0 +1,237 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  background-color: #f9f9f9;
+  color: #222;
+}
+
+a {
+  color: #0044cc;
+  text-decoration: none;
+}
+
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+  outline: 3px solid #ffbf47; /* foco accesible */
+  outline-offset: 2px;
+}
+
+h1, h2, h3 {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+/* Header */
+header {
+  background-color: #003366;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+header .logo img {
+  width: 50px;
+  height: 50px;
+}
+
+/* Navegación */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 5rem;
+  margin: 0;
+  padding: 10;
+}
+
+nav a {
+  color: white;
+  font-weight: bold;
+}
+
+nav a:hover,
+nav a:focus {
+  text-decoration: underline;
+}
+
+/* Buscador */
+.buscador {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+
+.buscador input {
+  padding: 0.4rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.buscador button {
+  background: #ffbf47;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.buscador button:hover {
+  background: #ff9f00;
+}
+
+/* Banner Home */
+.banner {
+  text-align: center;
+  padding: 2rem;
+  background: #e6f0ff;
+}
+
+.banner img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
+/* Noticias */
+.noticias {
+  padding: 2rem;
+}
+
+.noticias h2 {
+  margin-bottom: 1rem;
+}
+
+.noticias article {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.noticias img {
+  width: 120px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* Trámites */
+.tramites-list {
+  list-style: none;
+  padding: 2rem;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.tramites-list li {
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  height: 35.5vh;
+}
+
+.tramites-list img {
+  width: 50px;
+  height: 50px;
+}
+
+.tramites-list button {
+  margin-top: 0.5rem;
+  background: #003366;
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.tramites-list button:hover {
+  background: #0055aa;
+}
+
+/* Contacto */
+.contactos {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.con {
+  color: #007bff; /* Cambia el color del texto a un azul brillante */
+  font-family: Arial, sans-serif; /* Cambia la fuente */
+  font-size: 16px; /* Cambia el tamaño de la fuente */
+  text-decoration: none; 
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding: 2rem;
+  background: white;
+  border-radius: 10px;
+  max-width: 500px;
+  margin: 2rem auto;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+form input,
+form textarea {
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background: #003366;
+  color: white;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #0055aa;
+}
+
+/* Footer */
+footer {
+  background: #003366;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Utilidad: clase para ocultar visualmente pero mantener accesible */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
