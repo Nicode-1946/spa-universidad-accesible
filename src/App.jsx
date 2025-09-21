@@ -10,7 +10,7 @@ function App() {
       <header>
         <div className="logo">
           <img src="LogoU.png" alt="Logo de la Universidad" />
-          <h1>SPA Universitaria</h1>
+          <h1>Universidad SPA</h1>
         </div>
 
         <nav aria-label="Navegación principal">

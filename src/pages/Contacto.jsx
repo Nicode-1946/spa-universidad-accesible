@@ -5,7 +5,7 @@ export default function Contacto() {
         <p className="contactos">Si necesitas ayuda, completa el siguiente formulario o comunícate con nosotros:</p>
 
         <p className="contactos">
-        <a className="con" href="mailto:soporte@universidad.edu" aria-label="Correo electrónico de soporte">soporte@universidad.edu</a><br/>
+        <a className="con" href="mailto:soporte@uspa.edu" aria-label="Correo electrónico de soporte">soporte@uspa.edu</a><br/>
         <a className="con" href="tel:+573001112233" aria-label="Teléfono de soporte">+57 300 111 2233</a>
         </p>
 
